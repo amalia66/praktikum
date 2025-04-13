@@ -12,9 +12,6 @@ header {
     color: #f5efeb;
     padding: 20px 10px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 header h1 {
     font-size: 30px;
