@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amalia's Personal Website</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: #567c8d;
+            padding-bottom: 60px;
+        }
+        header {
+            background: #567c8d;
+            color: #f5efeb;
+            padding: 20px 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #f5efeb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: #f5efeb;
+            padding: 20px;
+            margin: 20px;
+        }
+        section h2 {
+            color: #567c8d;
+            margin-bottom: 15px;
+        }
+        .project-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .video, .audio {
+            margin-bottom: 20px;
+        }
+        video, audio {
+            max-width: 100%;
+            border: 1px solid #ccc;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        button {
+            padding: 10px;
+            background-color: #567c8d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #567c8d;
+        }
+        footer {
+            text-align: center;
+            background-color: #567c8d;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Personal Portofolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#media">Media</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Halo! Saya Rizqi Amalia Fauzi Putri, mahasiswa Sistem Informasi yang sedang menempuh semester 4 di Universitas Internasional Semen Indonesia. Saya memiliki latar belakang di bidang teknologi dan minat besar pada pengembangan sistem, data, dan multimedia. Saat ini, saya terus mengembangkan keterampilan dalam pemrograman, analisis sistem, dan desain UI/UX, serta terbuka untuk kolaborasi dan peluang magang untuk memperluas pengalaman di dunia profesional.</p>
+    </section>
+
+    <section id="project">
+        <h2>Project</h2>
+        <div class="project-container">
+            <img src="image/POLUSI UI Design.png">
+            <div class="text">
+                <p>UI design ini dibuat sebagai bagian dari pengembangan Portal Lomba UISI (POLUSI), sebuah platform digital yang bertujuan untuk mempermudah pengelolaan dan akses informasi lomba di lingkungan Universitas Internasional Semen Indonesia. Project ini merupakan bagian dari mata kuliah Rekayasa Kebutuhan Perangkat Lunak.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="media">
+        <h2>Media</h2>
+
+        <div class="video">
+            <h3>Video</h3>
+            <video controls width="320">
+
+            </video>
+        </div>
+
+        <div class="audio">
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2025 Rizqi Amalia.</p>
+    </footer>
+</body>
+</html>
