@@ -5,13 +5,16 @@ body {
     padding: 0;
     background: white;
     color: #567c8d;
+    padding-bottom: 60px;
 }
 header {
     background: #567c8d;
     color: #f5efeb;
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
     position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 header h1 {
     font-size: 30px;
@@ -21,8 +24,12 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 10px;
-    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px 0;
+    margin: 0;
+}
+nav li {
+    padding: 5px 10px;
 }
 nav a {
     color: #f5efeb;
@@ -32,6 +39,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 section {
     background-color: #f5efeb;
     padding: 20px;
